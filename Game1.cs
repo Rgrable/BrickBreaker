@@ -210,7 +210,7 @@ namespace BrickBreaker
             spriteBatch.DrawString(font, "Created By:\nRichard Grable\nrichardgrable.com", new Vector2(455, 620), Color.Orange);
 
             //Debug strings
-            spriteBatch.DrawString(font, "FINISHED: " + (finishedAmount / (FinishAmount / 100)).ToString() + "%", new Vector2(455, 125), Color.White);
+           // spriteBatch.DrawString(font, "FINISHED: " + (finishedAmount / (FinishAmount / )).ToString() + "%", new Vector2(455, 125), Color.White);
             //spriteBatch.DrawString(font, "SPEED: " + ballSpeed.ToString(), new Vector2(455, 155), Color.White);
 
 
@@ -258,7 +258,8 @@ namespace BrickBreaker
         {
             KeyboardState newKey = Keyboard.GetState();
             // Player 1
-            
+            // Auto Controller
+            //player_1.sprite.Position.X = ball_1.sprite.Position.X;
             if (newKey.IsKeyDown(Keys.Left))
             {
                 player_1.sprite.Position.X -= 8;
